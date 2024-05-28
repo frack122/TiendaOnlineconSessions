@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        /* Estilos simples para mejorar la apariencia */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .product {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Productos Disponibles</h1>
+
+<!-- Productos -->
+<div class="product">
+    <h3>Computadora</h3>
+    <p>Precio: $1500</p>
+    <form action="Servlet">
+        <input type="hidden"name="nombre"value="Computadora">
+        <input type="hidden"name="precio" value="15">
+        <label for="cantidad1">Cantidades:</label>
+        <input type="number" id="cantidad1" name="cantidades" value="1"min="1">
+        <button type="submit">Se Agrega al carrito</button>
+    </form>
+</div>
+
+<div class="product">
+    <h3>Tablet</h3>
+    <p>Precio: $50</p>
+   <form action="Servlet">
+       <input type="hidden" name="nombre" value="Tablet">
+       <input type="hidden" name="precio" value="10">
+       <label for="cantidad2">Cantidades:</label>
+       <input type="number" id="cantidad2" name="cantidades" value="1" min="1">
+       <button type="submit">Se agrega al carrito</button>
+   </form>
+</div>
+
+<div class="product">
+    <h3>PS4</h3>
+    <p>Precio: $150</p>
+    <form action="Servlet">
+        <input type="hidden" name="nombre" value="Tablet">
+        <input type="hidden" name="precio" value="10">
+        <label for="cantidad3">Cantidades:</label>
+        <input type="number" id="cantidad3" name="cantidades" value="1" min="1">
+        <button type="submit">Se agrega al carrito</button>
+    </form>
+</div>
+</body>
+</html>
